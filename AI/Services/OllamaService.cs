@@ -71,12 +71,11 @@ namespace AI.Services
                         format = useJsonFormat ? "json" : null,
                         options = new
                         {
-                            temperature = 0.1,
+                            temperature = 0.5,
                             top_p = 0.9,
                             seed = 42,
                             repeat_penalty = 1.0,
-                            num_predict = 4096,
-                            stop = new[] { "```", "\n\n\n" }
+                            num_predict = 128000,
                         }
                     };
 
